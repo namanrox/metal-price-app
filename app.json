@@ -22,8 +22,12 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       }
     },
+    "experiments": {
+      "baseUrl": "/metal-price-app"
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single"
     }
   }
 }

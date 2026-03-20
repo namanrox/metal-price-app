@@ -1,12 +1,15 @@
 {
   "name": "metal-price-app",
   "version": "1.0.0",
+  "homepage": "https://namanrox.github.io/metal-price-app",
   "main": "index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "expo export -p web",
+    "deploy": "gh-pages --nojekyll -d dist"
   },
   "dependencies": {
     "@react-navigation/native": "^7.1.34",
@@ -20,5 +23,8 @@
     "react-native-screens": "4.23.0",
     "react-native-web": "^0.21.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
